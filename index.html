@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequential Input Preferences</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    #inputSection {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    #inputSection input[type="text"] {
+      width: calc(100% - 22px); /* Adjust width to fit padding */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    #inputSection button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #inputSection button:hover {
+      background-color: #0056b3;
+    }
+
+    #status {
+      font-size: 16px;
+      color: #555;
+    }
+
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quien es el más odiado de M3? </h1>
+
+  <button type="button" onclick="showInput()">Start Input</button>
+
+  <div id="inputSection">
+    <h2>Escribe el primer apellido del HP</h2>
+    <input type="text" id="preferenceInput" placeholder="Enter preference (e.g., 'Beginner, Online')">
+    <button type="button" onclick="submitPreference()">Submit</button>
+    <p id="status"></p>
+  </div>
+
+  <h2>El mas odiado es :</h2>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
